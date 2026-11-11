@@ -1,0 +1,59 @@
+{
+  "artifact": "Orocore Integration Series 001 Final Checkpoint",
+  "series_id": "INTEGRATION-SERIES-001",
+  "standing": "OPERATIONAL_VALIDATION_PHASE_COMPLETE",
+  "frozen_at": "2026-11-11T13:05:31.4282747Z",
+  "architecture": {
+    "frozen_inspectors": 5,
+    "frozen_composition_contract": true,
+    "controlled_integration_specimens": 3,
+    "delta_006_required": false
+  },
+  "specimens": [
+    {
+      "id": "INT-SPEC-001",
+      "head": "88cd9b78cf86efc7c635954340270978d48033a3",
+      "manifest_sha256": "4B12B4EBAD44E2AE49752DCE0CA557778FCEAAD3AA720C8A8FF23E871C02F0DD",
+      "result_sha256": "C3EFB050220D8C1CF84D6B58B5AD475B7963AD0A529D2DDC26D8B9B5A3F45971",
+      "delta_004": "HOLD",
+      "delta_005": "CORRELATED_SOURCE",
+      "composition": "DEPENDENCY_HOLD"
+    },
+    {
+      "id": "INT-SPEC-002",
+      "head": "35b11786a8bc0fb8a01375aa398365b640fcf09f",
+      "manifest_sha256": "9EB7552F284EFE349A158E57909B62E904E64555804A8E5B36E44F51373F633A",
+      "result_sha256": "FD2C432C9EBC1B5DB83DA347DF5DC740F6257CC229A217D03AB6D17CC8808642",
+      "delta_004": "TRANSFER_ESTABLISHED",
+      "delta_005": "CORRELATED_SOURCE",
+      "composition": "COMPOSABLE_WITH_LIMITATION"
+    },
+    {
+      "id": "INT-SPEC-003",
+      "head": "703d31a0fe97c4e7f4bdc4fa7a00a82e09fba137",
+      "result_sha256": "5EC3FB5D86AB329FCCB96FD8323E0584C37E2212BE8C3F100F69A75F82E6D43F",
+      "delta_004": "TRANSFER_ESTABLISHED",
+      "delta_005": "INDEPENDENCE_ESTABLISHED",
+      "composition": "COMPOSABLE_FOR_FURTHER_REVIEW"
+    }
+  ],
+  "demonstrated": [
+    "Required unresolved dependency propagates to composition HOLD",
+    "Resolving transfer standing removes only the transfer dependency HOLD",
+    "Independent witness limitation remains visible after transfer resolution",
+    "Resolving witness correlation advances composition only to further-review eligibility",
+    "Local inspector outputs remain semantically distinct",
+    "Positive local observations do not create global PASS",
+    "Composition does not create execution authority"
+  ],
+  "boundaries": [
+    "Observation does not create authority",
+    "Evidence does not create truth",
+    "PRESERVED does not create continuation permission",
+    "TRANSFER_ESTABLISHED does not create deployment authority",
+    "INDEPENDENCE_ESTABLISHED does not create claim truth",
+    "COMPOSABLE_FOR_FURTHER_REVIEW does not create global PASS",
+    "UNKNOWN remains HOLD when required",
+    "No DELTA-006 created"
+  ]
+}

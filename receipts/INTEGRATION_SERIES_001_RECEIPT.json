@@ -1,0 +1,21 @@
+{
+  "series_id": "INTEGRATION-SERIES-001",
+  "checkpoint_sha256": "2D94865D989611A0C6111C0DBBD192BBC76056D394B4846ABD82DA9EF98319E9",
+  "specimen_results": [
+    {
+      "id": "INT-SPEC-001",
+      "sha256": "C3EFB050220D8C1CF84D6B58B5AD475B7963AD0A529D2DDC26D8B9B5A3F45971"
+    },
+    {
+      "id": "INT-SPEC-002",
+      "sha256": "FD2C432C9EBC1B5DB83DA347DF5DC740F6257CC229A217D03AB6D17CC8808642"
+    },
+    {
+      "id": "INT-SPEC-003",
+      "sha256": "5EC3FB5D86AB329FCCB96FD8323E0584C37E2212BE8C3F100F69A75F82E6D43F"
+    }
+  ],
+  "operational_validation_phase_complete": true,
+  "execution_authority_created": false,
+  "global_pass_created": false
+}
